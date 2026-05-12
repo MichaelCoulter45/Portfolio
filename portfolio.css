@@ -1,0 +1,115 @@
+body {
+    margin-top: 5%;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+.navigation-ribbon {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    padding: 10px 0;
+    z-index: 1000;
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    margin: 0;
+}
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #38bdf8;
+}
+.page-header {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.page-header h1, .page-header p {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.projects-btn {
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+}
+.demo-video1 {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.demo-video1 iframe {
+    width: 100%;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    filter: blur(10px) brightness(0.7);
+}
+.demo-video1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.demo-video1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.main-container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+.main-container h2, h3 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.featured-projects {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 50px;
+}
+.projects-section {
+    display: grid;
+    text-align: left;
+    padding: 10px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.skills-section, .about-preview, .contact-section {
+    margin-top: 50px;
+    padding-top: 30px;
+}
