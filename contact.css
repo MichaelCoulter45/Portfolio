@@ -1,0 +1,117 @@
+/* =============================================
+   CONTACT PAGE — contact.css
+   ============================================= */
+
+
+
+.contact-page-header {
+    padding: 120px 5% 40px;
+    border-bottom: 0.5px solid rgba(255,255,255,0.07);
+    margin-bottom: 60px;
+}
+.contact-page-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #38bdf8;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'DM Mono', monospace;
+}
+.contact-page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+.contact-page-sub {
+    font-size: 14px;
+    color: #475569;
+    margin: 0;
+}
+
+.contact-main {
+    padding: 0 5% 100px;
+    max-width: 640px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255,255,255,0.02);
+    border: 0.5px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+.contact-card:hover {
+    border-color: rgba(56,189,248,0.35);
+    background: rgba(56,189,248,0.04);
+    transform: translateX(4px);
+}
+.contact-card-icon {
+    font-size: 22px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.contact-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.contact-card-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #475569;
+}
+.contact-card-value {
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 400;
+}
+.contact-card:hover .contact-card-value {
+    color: #e2e8f0;
+}
+.contact-card-arrow {
+    font-size: 18px;
+    color: #334155;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.contact-card:hover .contact-card-arrow {
+    color: #38bdf8;
+    transform: translateX(2px);
+}
+
+.contact-note {
+    padding: 20px;
+    border-left: 2px solid rgba(56,189,248,0.3);
+    margin-left: 4px;
+}
+.contact-note p {
+    font-size: 14px;
+    color: #475569;
+    margin: 0;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.nav-links a.active { color: #38bdf8; }

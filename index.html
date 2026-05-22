@@ -1,110 +1,98 @@
-<!-- Home Page -->
-<!-- 
-In this assignment, you will need to create your own digital portfolio. 
-You can use HTM, CSS, Bootstrap, JavaScript and/or any other frontend framework.
-DUE: APRIL 14
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael's Portfolio</title>
+    <title>M.Coulter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="portfolio.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Ribbon -->
-    <div class="navigation-ribbon">
+    <nav class="navigation-ribbon">
         <div class="nav-container">
-            <h2 class="name">Michael Coulter</h2>
+            <div><a href="index.html" class="btn-name">Michael Coulter</a></div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="about.html">About Me</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-    </div>
-    <!-- Header -->
-    <div class="page-header">
-        <h1>Hi, I'm Michael</h1>
-        <p>I'm a Software Developer focused on automation, game systems, and performance driven tools.</p>
-        <a href="projects.html" class="btn btn-secondary">View My Work</a>
-        
-    </div>
-    <!-- Demo Video container https://www.youtube.com/watch?v=9g-vJT4wvQs -->
-    <!-- I plan on replacing this with my own video demo of my projects later -->
-    <div class="demo-video1">
-        <iframe 
-            width="560" height="315" 
-            src="https://www.youtube.com/embed/9g-vJT4wvQs?start=09&end=16&mute=1&autoplay=1&loop=1&playlist=9g-vJT4wvQs&controls=0&playsinline=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    <!-- Main Content -->
-    <div class="main-container">
-        <div class="projects-section">
-            <h2 class="featured-projects">Featured Projects</h2>
-            <div class="project-card">
-                <h3>Autonomous Gameplay Systems</h3>
-                <p>Engineered intelligent automation agents utilizing computer vision and input simulation to optimize real-time decision-making in dynamic gaming environments.</p>
-                <ul>
-                    <li><strong>Computer Vision Integration:</strong> Implemented screen-reading and object-matching algorithms to identify game states and environmental triggers with high precision.</li>
-                    <li><strong>Heuristic Logic:</strong> Developed optimization scripts to simulate human-like input patterns, ensuring efficient resource management and task execution.</li>
-                </ul>
-                <!-- These buttons don't do anything just yet, but I'm planning on making them reveal code and an embedded youtube video I'll make to demo -->
-                <div class="project-actions">
-                    <button>View Code</button>
-                    <button>Watch Demo</button>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>AI-Powered News Intelligence & Synthesis Tool</h3>
-                <p>Developed an end-to-end NLP application that automates news consumption by transforming raw URLs into high-fidelity summaries and optimized headlines using dual-model orchestration.</p>
-                <ul>
-                    <li><strong>System Architecture:</strong> Engineered a Python-based backend to scrape web content and process it through two specialized Large Language Models (LLMs) to ensure factual accuracy and creative titling.</li>
-                    <li><strong>Interface Design:</strong> Developed a responsive Tkinter GUI, enabling non-technical users to transition from raw data to actionable insights with a single click.</li>
-                    <li><strong>Model Optimization:</strong> Implemented custom prompt engineering to refine output consistency, reducing the time required to digest long-form journalism by over 70%.</li>
-                </ul>
-                <p>Powered by Facebook's Bart model from Hugging Face and Groq</p>
-                <div class="project-actions">
-                    <button>View Code</button>
-                    <button>Watch Demo</button>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Biometric Performance Analytics</h3>
-                <p>An end-to-end data pipeline that transforms granular CSV-based running logs into actionable training intelligence.</p>
-                <ul>
-                    <li><strong>Automated ETL Pipeline:</strong> Built logic to parse raw CSV exports, calculating complex secondary metrics like split consistency and aerobic efficiency trends.</li>
-                    <li><strong>Visual Insights:</strong> Reduced manual tracking overhead by automating the generation of performance summaries, allowing for data-driven adjustments to training loads.</li>
-                </ul>
-                <div class="project-actions">
-                    <button>View Code</button>
-                    <button>Watch Demo</button>
-                </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="hero-eyebrow">Hello, I'm Michael</span>
+            <h1 class="hero-title">Software Developer<br><span class="hero-title-accent">&amp; Builder</span></h1>
+            <p class="hero-desc">I build tools that solve real problems.</p>
+            <p class="hero-desc">• Automation scripts • Data pipelines • Analytics dashboards •</p>
+            <p class="hero-desc">When I'm not coding, I'm logging miles training for my next marathon.</p>
+            <div class="hero-actions">
+                <a href="projects.html" class="btn-primary">View Projects</a>
+                <a href="contact.html" class="btn-ghost">Get in Touch</a>
             </div>
         </div>
-        <div class="skills-section">
-            <h2>Skills</h2>
-            <p>Python • Java • JavaScript • HTML • CSS • Machine Learning • Data Mining • Pandas • Data Processing</p>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years coding</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Projects built</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Years marathon training</span>
+            </div>
         </div>
-        <div class="about-preview">
-            <h2>About Me</h2>
-            <p>I'm a computer science student who enjoys building efficient systems,
-                especially in automation and game environments.</p>
+    </section>
+    <section class="interests-section">
+        <span class="section-label">What I work on</span>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <div class="interest-icon">⚙️</div>
+                <h3 class="interest-title">Automation</h3>
+                <p class="interest-desc">Building scripts that eliminate repetitive tasks. From game bots to workflow automation using computer vision and input simulation.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon">📊</div>
+                <h3 class="interest-title">Data Analytics</h3>
+                <p class="interest-desc">Turning raw data into meaningful insights. Currently building a runner's dashboard to visualize training metrics from .fit files.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon">🔍</div>
+                <h3 class="interest-title">Data Mining</h3>
+                <p class="interest-desc">Extracting patterns and information from large datasets. Interested in applying data mining to sports performance and training analysis.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon">🏃</div>
+                <h3 class="interest-title">Marathon Running</h3>
+                <p class="interest-desc">Three years of year-round training. Running fuels my discipline and directly inspires my biggest project - the Runner's Dashboard.</p>
+            </div>
         </div>
-        <div class="contact-section">
-            <h2>Contact</h2>
-            <p>Email: michaeljohncoulter@gmail.com</p>
+    </section>
+    <section class="featured-section">
+        <span class="section-label">Featured project</span>
+        <div class="featured-card">
+            <div class="featured-content">
+                <span class="featured-badge">In Progress</span>
+                <h2 class="featured-title">Runner's Dashboard</h2>
+                <p class="featured-desc">My most ambitious project is this full data analytics dashboard for runners. Pulls data from .fit files, processes training metrics, and visualizes performance trends over time. Born from my own marathon training.</p>
+                <a href="projects.html" class="btn-primary">See All Projects →</a>
+            </div>
+            <div class="featured-visual">
+                <div class="featured-metric">
+                    <span class="metric-val">26.2</span>
+                    <span class="metric-lbl">miles</span>
+                </div>
+                <div class="featured-metric">
+                    <span class="metric-val">∞</span>
+                    <span class="metric-lbl">data points</span>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </section>
 </body>
 </html>

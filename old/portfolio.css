@@ -1,0 +1,210 @@
+
+/* WHOLE PAGE */
+body {
+    margin-top: 5%;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+
+
+
+ /* ################ MAIN PAGE ################# */
+.skills-section, .about-preview, .contact-section {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+ /* ################ END OF MAIN PAGE ################ */
+
+
+
+
+
+
+ /* ################ PROJECTS PAGE ################ */
+/* NAVIGATION RIBBON  */
+.navigation-ribbon {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: #00000078;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    margin: 0;
+}
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+
+
+/* PAGE HEADER  */
+.page-header {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.header-projects {
+    margin-left: 10%;
+}
+.header-demo {
+    margin-left: 44%;
+}
+.page-header h1, .page-header p {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    padding-bottom: 50px;
+    align-items: stretch;
+}
+.main-container h2, h3 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+/* PROJECTS SECTION */
+.projects-section {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 50%;
+    max-width: 1000px;
+    padding-bottom: 50px;
+    background-color: #00000078;
+}
+.project-actions {
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+}
+.project-actions button {
+    padding: 8px 16px;
+    border: 1px solid #38bdf8;
+    background: transparent;
+    color: #38bdf8;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.project-actions button:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+[id$="-toggle"] {
+    border-color: #f87171 !important;
+    color: #f87171 !important;
+}
+[id$="-toggle"]:hover {
+    background-color: #f87171 !important;
+    color: #0f172a !important;
+}
+.project-actions button:active {
+    transform: scale(0.90);
+    background-color: #00000078;
+}
+
+
+
+
+/* VIDEO SECTION  */
+.demo-video-header {
+    display: flex;
+    font-weight: bold;
+    text-decoration: underline;
+    justify-content: center;
+}
+.demo-video, .video-iframe {
+    display: flex;
+    height: auto;
+    width: 75%;
+    z-index: -1;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 50px;
+    background-color: #00000078;
+    /* border: 1px solid red; */
+}
+.demo-video iframe { /* Youtube embedded links */
+    pointer-events: none;
+    border: 1px solid #00000078;
+}
+.demo-video video {
+    justify-content: right;
+    width: auto;
+    transition: opacity 0.3s ease;
+    /* border: 1px solid red; */
+}
+.demo-video video.video-off {
+    visibility: hidden;
+}
+
+
+/* CODE DISPLAY SECTION 
+.code-display {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    border: 3px solid #00000078;
+    flex: 1;
+    padding: 10px;
+}
+.code-display pre {
+    flex: 1;
+    height: 100%;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    height: 900px;
+    font-size: 0.9rem;
+} */
+/* ################ END OF PROJECTS PAGE ################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
