@@ -224,10 +224,3 @@
     letter-spacing: 0.1em;
 }
 
-/* Nav active */
-.nav-links a.active { color: #38bdf8; }
-
-@media (max-width: 700px) {
-    .featured-card { grid-template-columns: 1fr; }
-    .featured-visual { flex-direction: row; justify-content: center; }
-}

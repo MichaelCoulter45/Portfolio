@@ -259,20 +259,3 @@
     padding: 4px 0;
 }
 
-/* ################ Nav active state ################ */
-.nav-links a.active {
-    color: #38bdf8;
-}
-
-/* ################ Responsive ################ */
-@media (max-width: 900px) {
-    .projects-main {
-        grid-template-columns: 1fr;
-    }
-    .video-panel {
-        position: static;
-    }
-    .projects-page-title {
-        font-size: 36px;
-    }
-}

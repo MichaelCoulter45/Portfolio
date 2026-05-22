@@ -26,6 +26,24 @@ body {
     align-items: center;
 }
 
+.nav-links a {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(255,255,255,0.15);
+    color: #94a3b8;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    display: inline-block;
+}
+.nav-links a:hover {
+    border-color: rgba(255,255,255,0.35);
+    color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
 /* NAVIGATION NAME */
 .btn-name {
     font-family: 'Syne', sans-serif;
@@ -42,4 +60,24 @@ body {
     border-color: rgba(255,255,255,0.35);
     color: #e2e8f0;
     transform: translateY(-1px);
+}
+
+
+
+/* ################ Nav active state ################ */
+.nav-links a.active {
+    color: #38bdf8;
+}
+
+/* ################ Responsive ################ */
+@media (max-width: 900px) {
+    .projects-main {
+        grid-template-columns: 1fr;
+    }
+    .video-panel {
+        position: static;
+    }
+    .projects-page-title {
+        font-size: 36px;
+    }
 }

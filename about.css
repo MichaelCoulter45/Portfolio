@@ -132,10 +132,3 @@
 }
 
 
-/* ########## NAV LINKS ########## */
-.nav-links a.active { color: #38bdf8; }
-
-@media (max-width: 800px) {
-    .about-main { grid-template-columns: 1fr; }
-    .about-right { position: static; }
-}
