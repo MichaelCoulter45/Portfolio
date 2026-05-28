@@ -11,7 +11,7 @@ const playingTitle = document.getElementById('playing-title');
 const projects = {
     dashboard: {name: "Runner's Dashboard", src: null },
     fitfile:   {name: '.FIT Data Visualization', src:  './videos/Fit file viewer.mp4'},
-    gamebot:   {name: 'Game Automation',    src: null },
+    gamebot:   {name: 'Game Automation',    src: './videos/TypeKnight Project.mp4' },
     rps:       {name: 'Rock Paper Scissors Simulator', src:  './videos/RockPaperScissorsSim.mp4'},
 };
 
