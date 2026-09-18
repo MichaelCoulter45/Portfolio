@@ -9,9 +9,10 @@ const playingTitle = document.getElementById('playing-title');
 
 // Map project IDs to their video src and display name
 const projects = {
-    jarvis:    {name: 'JARVIS Assistant', src: null },
-    gamebot:   {name: 'Game Automation',    src: './videos/TypeKnight Project.mp4' },
-    rps:       {name: 'Rock Paper Scissors Simulator', src:  './videos/RockPaperScissorsSim.mp4'},
+    jarvis:             {name: "JARVIS-Assistant", src: './videos/JARVIS v0.03 demo.mp4' },
+    type_knight:        {name: 'Type Knight Auto Typer',    src: './videos/TypeKnight Project.mp4' },
+    shopify_scraper:    {name: 'Shopify Scraper', src: null},
+    rps:                {name: 'Rock Paper Scissors Simulator', src:  './videos/RockPaperScissorsSim.mp4'},
 };
 
 let currentProject = null;
