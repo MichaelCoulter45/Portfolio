@@ -37,44 +37,27 @@
             <div class="projects-list" id="projects-list">
                 <section id="projects">
                     <h2>Highlighted Projects</h2>
-                    <!-- Dashboard Card -->
-                    <div class="project-card" id="card-dashboard" onclick="selectProject('dashboard')">
+                    <!-- Card 1 -->
+                    <div class="project-card" id="card-dashboard" onclick="selectProject('jarvis')">
                         <div class="project-card-inner">
                             <div class="project-card-header">
-                                <h3 class="project-card-title">Runner's Dashboard</h3>
-                                <span class="project-badge wip">WIP</span>
-                            </div>
-                            <p class="project-card-desc">My main project, still very much a work in progress. Many months to go before being called finished.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">In Progress</span>
-                            </div>
-                            <div class="project-card-footer">
-                                <span class="no-demo-label">No demo available yet</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fit File Viewer Card -->
-                    <div class="project-card" id="card-fitfile" onclick="selectProject('fitfile')">
-                        <div class="project-card-inner">
-                            <div class="project-card-header">
-                                <h3 class="project-card-title">.FIT Data Visualization</h3>
+                                <h3 class="project-card-title">Jarvis Assistant</h3>
                                 <span class="project-badge has-demo">Demo</span>
                             </div>
-                            <p class="project-card-desc">An app that extracts data from .fit files and displays relevant metrics to the user.</p>
+                            <p class="project-card-desc">A Windows desktop tool that can understand natural language commands and perform actions on the user's computer.</p>
                             <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">Scripting</span>
-                                <span class="project-tag">Data Analytics</span>
-                                <span class="project-tag">Data Mining</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Automation</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Software Architecture</span>
                             </div>
                             <div class="project-card-footer">
                                 <span class="demo-cta">▶ Click to watch demo</span>
-                                <a class="demo-link" href="https://michaelcoulter45.github.io/Fit-File-Viewer/" target="_blank" rel="noopener noreferrer">Link to App</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Game Bot Card -->
-                    <div class="project-card" id="card-gamebot" onclick="selectProject('gamebot')">
+                    <!-- Card 2 -->
+                    <div class="project-card" id="card-gamebot" onclick="selectProject('type_knight')">
                         <div class="project-card-inner">
                             <div class="project-card-header">
                                 <h3 class="project-card-title">OCR Text and Input Simulation</h3>
@@ -94,7 +77,26 @@
                             </div>
                         </div>
                     </div>
-                    <!-- RPS Simulator Card -->
+                    <!-- Card 3 -->
+                    <div class="project-card" id="card-gamebot" onclick="selectProject('shopify_scraper')">
+                        <div class="project-card-inner">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title">Shopify Product Scraper</h3>
+                                <span class="project-badge wip">WIP</span>
+                            </div>
+                            <p class="project-card-desc">Gathers product data from online Shopify stores via their JSON file.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">JSON Parsing</span>
+                                <span class="project-tag">Data Mining</span>
+                                <span class="project-tag">CSV</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="demo-cta">No demo available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
                     <div class="project-card" id="card-rps" onclick="selectProject('rps')">
                         <div class="project-card-inner">
                             <div class="project-card-header">
@@ -102,82 +104,6 @@
                                 <span class="project-badge has-demo">Demo</span>
                             </div>
                             <p class="project-card-desc">A fun RPS simulator built in a few hours using HTML, CSS, and JavaScript.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">HTML</span>
-                            </div>
-                            <div class="project-card-footer">
-                                <span class="demo-cta">▶ Click to watch demo</span>
-                                <a class="demo-link" href="https://michaelcoulter45.github.io/Rock-Paper-Scissors-Simulator/" target="_blank" rel="noopener noreferrer">Link to App</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- ############## OTHER PROJECT CARDS ############## -->
-                <section class="other-projects">
-                    <h2>Additional Projects</h2>
-                    <div class="project-card" id="card-rps" onclick="selectProject('rps')">
-                        <div class="project-card-inner">
-                            <div class="project-card-header">
-                                <h3 class="project-card-title"> ** Placeholder Card ** </h3>
-                                <span class="project-badge has-demo">Demo</span>
-                            </div>
-                            <p class="project-card-desc"> ** Placeholder Card ** </p>
-                            <div class="project-tags">
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">HTML</span>
-                            </div>
-                            <div class="project-card-footer">
-                                <span class="demo-cta">▶ Click to watch demo</span>
-                                <a class="demo-link" href="https://michaelcoulter45.github.io/Rock-Paper-Scissors-Simulator/" target="_blank" rel="noopener noreferrer">Link to App</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" id="card-rps" onclick="selectProject('rps')">
-                        <div class="project-card-inner">
-                            <div class="project-card-header">
-                                <h3 class="project-card-title"> ** Placeholder Card ** </h3>
-                                <span class="project-badge has-demo">Demo</span>
-                            </div>
-                            <p class="project-card-desc"> ** Placeholder Card ** </p>
-                            <div class="project-tags">
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">HTML</span>
-                            </div>
-                            <div class="project-card-footer">
-                                <span class="demo-cta">▶ Click to watch demo</span>
-                                <a class="demo-link" href="https://michaelcoulter45.github.io/Rock-Paper-Scissors-Simulator/" target="_blank" rel="noopener noreferrer">Link to App</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" id="card-rps" onclick="selectProject('rps')">
-                        <div class="project-card-inner">
-                            <div class="project-card-header">
-                                <h3 class="project-card-title"> ** Placeholder Card ** </h3>
-                                <span class="project-badge has-demo">Demo</span>
-                            </div>
-                            <p class="project-card-desc"> ** Placeholder Card ** </p>
-                            <div class="project-tags">
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                                <span class="project-tag">HTML</span>
-                            </div>
-                            <div class="project-card-footer">
-                                <span class="demo-cta">▶ Click to watch demo</span>
-                                <a class="demo-link" href="https://michaelcoulter45.github.io/Rock-Paper-Scissors-Simulator/" target="_blank" rel="noopener noreferrer">Link to App</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" id="card-rps" onclick="selectProject('rps')">
-                        <div class="project-card-inner">
-                            <div class="project-card-header">
-                                <h3 class="project-card-title"> ** Placeholder Card ** </h3>
-                                <span class="project-badge has-demo">Demo</span>
-                            </div>
-                            <p class="project-card-desc"> ** Placeholder Card ** </p>
                             <div class="project-tags">
                                 <span class="project-tag">JavaScript</span>
                                 <span class="project-tag">CSS</span>
